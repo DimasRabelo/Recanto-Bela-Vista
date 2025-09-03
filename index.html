@@ -7,32 +7,44 @@
   
   <!-- Tailwind CSS externo -->
   <link rel="stylesheet" href="./css/output.css">
+  <link rel="stylesheet" href="./css/estilo.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="font-sans text-gray-700 bg-yellow-50">
 
-  <!-- Hero -->
-  <section class="relative h-[60vh] md:h-[80vh] w-full overflow-hidden">
-    <div id="slideshow" class="absolute inset-0 w-full h-full">
-      <img src="https://picsum.photos/id/1018/1920/1080" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000" />
-      <img src="https://picsum.photos/id/1025/1920/1080" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
-      <img src="https://picsum.photos/id/1036/1920/1080" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
-    </div>
+<section class="relative h-[60vh] md:h-[80vh] w-full overflow-hidden">
 
-    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-  <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg" style="text-shadow: 2px 2px 0px black, -2px 2px 0px black, 2px -2px 0px black, -2px -2px 0px black;">
-    Recanto Bela Vista
-  </h1>
-  <p class="text-lg md:text-2xl mb-6 text-white drop-shadow-lg" style="text-shadow: 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black, -1px -1px 0px black;">
-    Chalés para Alugar 
-  </p>
-  <a href="#contato" class="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition">
-    Fale Conosco
-  </a>
+  <!-- Slideshow -->
+  <div id="slideshow" class="absolute inset-0 w-full h-full">
+    <img src="https://picsum.photos/id/1018/1920/1080" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000" />
+    <img src="https://picsum.photos/id/1025/1920/1080" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+    <img src="https://picsum.photos/id/1036/1920/1080" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+  </div>
+
+  <!-- Logo fixa, tamanho intermediário -->
+<div class="logo-circulo">
+  <img src="./img/recanto-belavista.png" alt="Recanto Bela Vista">
 </div>
 
-  </section>
+
+  <!-- Texto central -->
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg" style="text-shadow: 2px 2px 0px black, -2px 2px 0px black, 2px -2px 0px black, -2px -2px 0px black;">
+      Recanto Bela Vista
+    </h1>
+    <p class="text-lg md:text-2xl mb-6 drop-shadow-lg" style="text-shadow: 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black, -1px -1px 0px black;">
+      Chalés para Alugar 
+    </p>
+    <a href="#contato" class="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition">
+      Fale Conosco
+    </a>
+  </div>
+
+</section>
+
+
+
 
   <!-- Sobre Nós -->
   <section id="sobre" class="py-16 px-6 md:px-20 bg-green-50 text-center">
