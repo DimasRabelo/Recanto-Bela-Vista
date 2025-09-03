@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recanto Bela Vista - Chalés em Guararema</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-700 bg-yellow-50">
+
+
+  <!-- Hero com Slideshow e Degradê -->
+  <section class="relative h-[60vh] md:h-[80vh] w-full overflow-hidden">
+    <div id="slideshow" class="absolute inset-0 w-full h-full">
+      <img src="https://picsum.photos/id/1018/1920/1080" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000" />
+      <img src="https://picsum.photos/id/1025/1920/1080" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+      <img src="https://picsum.photos/id/1036/1920/1080" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+    </div>
+
+   
+    <!-- Conteúdo do hero -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Recanto Bela Vista</h1>
+      <p class="text-lg md:text-2xl mb-6">Chalés para Alugar e Vender em Guararema</p>
+      <a href="#contato" class="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition">
+        Fale Conosco
+      </a>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre" class="py-16 px-6 md:px-20 bg-green-50 text-center">
+    <h2 class="text-3xl font-bold mb-6">Sobre Nós</h2>
+    <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+      O Recanto Bela Vista é o lugar perfeito para descansar, aproveitar a natureza e viver momentos inesquecíveis.
+      Oferecemos chalés confortáveis em Guararema, tanto para aluguel quanto para venda.
+    </p>
+  </section>
+
+  <!-- Vídeo de Apresentação -->
+  <section id="video" class="py-16 px-6 md:px-20 bg-green-50 text-center">
+    <h2 class="text-3xl font-bold mb-8">Conheça o Recanto Bela Vista</h2>
+    <div class="max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden shadow-lg">
+      <iframe class="w-full h-full" src="https://www.youtube.com/embed/ScMzIvxBSi4" 
+        title="Vídeo Recanto Bela Vista" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria" class="py-16 px-6 md:px-20 bg-green-50 text-center">
+    <h2 class="text-3xl font-bold mb-8">Galeria de Chalés</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <img src="https://picsum.photos/id/1040/600/400" class="rounded-lg shadow-lg hover:scale-105 transition" />
+      <img src="https://picsum.photos/id/1043/600/400" class="rounded-lg shadow-lg hover:scale-105 transition" />
+      <img src="https://picsum.photos/id/1045/600/400" class="rounded-lg shadow-lg hover:scale-105 transition" />
+    </div>
+  </section>
+
+
+  <!-- Aluguéis e Vendas -->
+  <section id="valores" class="py-16 px-6 md:px-20 bg-green-50 text-center">
+    <h2 class="text-3xl font-bold mb-10">Aluguéis e Vendas</h2>
+    <div class="flex flex-col md:flex-row justify-center gap-8 max-w-5xl mx-auto">
+
+      <div class="flex-1 p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-4">🏡 Chalés para Alugar</h3>
+        <p class="text-gray-700 mb-6">Aproveite dias de descanso em meio à natureza.</p>
+        <p class="text-3xl font-bold text-green-600 mb-6">A partir de R$ 350/dia</p>
+        <a href="#contato" class="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition">
+          Reservar Agora
+        </a>
+      </div>
+
+      <div class="flex-1 p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-4">🏠 Chalés à Venda</h3>
+        <p class="text-gray-700 mb-6">Realize seu sonho de ter um refúgio em Guararema.</p>
+        <p class="text-3xl font-bold text-green-600 mb-6">A partir de R$ 350.000</p>
+        <a href="#contato" class="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition">
+          Falar com Vendas
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section id="diferenciais" class="py-16 px-6 md:px-20 bg-green-50">
+    <h2 class="text-3xl font-bold text-center mb-10">Por que escolher o Recanto Bela Vista?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2">🌄 Vista Privilegiada</h3>
+        <p>Relaxe com uma das mais belas vistas de Guararema.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2">🏡 Conforto e Tranquilidade</h3>
+        <p>Chalés aconchegantes ideais para descanso e lazer.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2">📍 Localização</h3>
+        <p>A poucos minutos do centro turístico de Guararema.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-16 px-6 md:px-20 bg-green-50 text-center">
+    <h2 class="text-3xl font-bold mb-8">Entre em Contato</h2>
+    <p class="text-lg mb-6">Agende sua visita ou faça sua reserva pelo WhatsApp.</p>
+    <a href="https://wa.me/5511999999999" target="_blank" 
+       class="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-lg text-lg shadow-lg transition">
+      📲 Falar no WhatsApp
+    </a>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-green-600 text-white py-6 text-center">
+    <p>&copy; 2025 Recanto Bela Vista. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do slideshow -->
+  <script>
+    const slides = document.querySelectorAll('#slideshow img');
+    let current = 0;
+
+    function showNextSlide() {
+      slides[current].classList.remove('opacity-100');
+      slides[current].classList.add('opacity-0');
+      current = (current + 1) % slides.length;
+      slides[current].classList.remove('opacity-0');
+      slides[current].classList.add('opacity-100');
+    }
+
+    setInterval(showNextSlide, 4000);
+  </script>
+
+  
+    
+
+</body>
+</html>
