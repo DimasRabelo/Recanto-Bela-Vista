@@ -4,12 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recanto Bela Vista - Chalés em Guararema</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind CSS externo -->
+  <link rel="stylesheet" href="./css/output.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="font-sans text-gray-700 bg-yellow-50">
 
-
-  <!-- Hero com Slideshow e Degradê -->
+  <!-- Hero -->
   <section class="relative h-[60vh] md:h-[80vh] w-full overflow-hidden">
     <div id="slideshow" class="absolute inset-0 w-full h-full">
       <img src="https://picsum.photos/id/1018/1920/1080" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000" />
@@ -17,15 +20,18 @@
       <img src="https://picsum.photos/id/1036/1920/1080" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
     </div>
 
-   
-    <!-- Conteúdo do hero -->
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Recanto Bela Vista</h1>
-      <p class="text-lg md:text-2xl mb-6">Chalés para Alugar e Vender em Guararema</p>
-      <a href="#contato" class="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition">
-        Fale Conosco
-      </a>
-    </div>
+  <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg" style="text-shadow: 2px 2px 0px black, -2px 2px 0px black, 2px -2px 0px black, -2px -2px 0px black;">
+    Recanto Bela Vista
+  </h1>
+  <p class="text-lg md:text-2xl mb-6 text-white drop-shadow-lg" style="text-shadow: 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black, -1px -1px 0px black;">
+    Chalés para Alugar 
+  </p>
+  <a href="#contato" class="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition">
+    Fale Conosco
+  </a>
+</div>
+
   </section>
 
   <!-- Sobre Nós -->
@@ -37,7 +43,7 @@
     </p>
   </section>
 
-  <!-- Vídeo de Apresentação -->
+  <!-- Vídeo -->
   <section id="video" class="py-16 px-6 md:px-20 bg-green-50 text-center">
     <h2 class="text-3xl font-bold mb-8">Conheça o Recanto Bela Vista</h2>
     <div class="max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden shadow-lg">
@@ -58,37 +64,39 @@
     </div>
   </section>
 
+<!-- Aluguéis -->
+<section id="valores" class="py-16 px-6 md:px-20 bg-green-50 text-center">
+  <h2 class="text-3xl font-bold mb-10">Aluguéis</h2>
+  <div class="flex flex-col md:flex-row justify-center gap-8 max-w-5xl mx-auto">
 
-  <!-- Aluguéis e Vendas -->
-  <section id="valores" class="py-16 px-6 md:px-20 bg-green-50 text-center">
-    <h2 class="text-3xl font-bold mb-10">Aluguéis e Vendas</h2>
-    <div class="flex flex-col md:flex-row justify-center gap-8 max-w-5xl mx-auto">
-
-      <div class="flex-1 p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition">
-        <h3 class="text-2xl font-semibold mb-4">🏡 Chalés para Alugar</h3>
-        <p class="text-gray-700 mb-6">Aproveite dias de descanso em meio à natureza.</p>
-        <p class="text-3xl font-bold text-green-600 mb-6">A partir de R$ 350/dia</p>
-        <a href="#contato" class="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition">
-          Reservar Agora
-        </a>
-      </div>
-
-      <div class="flex-1 p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition">
-        <h3 class="text-2xl font-semibold mb-4">🏠 Chalés à Venda</h3>
-        <p class="text-gray-700 mb-6">Realize seu sonho de ter um refúgio em Guararema.</p>
-        <p class="text-3xl font-bold text-green-600 mb-6">A partir de R$ 350.000</p>
-        <a href="#contato" class="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition">
-          Falar com Vendas
-        </a>
-      </div>
-
+    <!-- Chalés para Alugar -->
+    <div class="flex-1 p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition">
+      <h3 class="text-2xl font-semibold mb-4">🏡 Chalés para Alugar</h3>
+      <p class="text-gray-700 mb-6">Aproveite dias de descanso em meio à natureza.</p>
+      <p class="text-3xl font-bold text-green-600 mb-6">A partir de R$ 350/dia</p>
+      <a href="#contato" class="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition">
+        Reservar Agora
+      </a>
     </div>
-  </section>
+
+    <!-- Casas para Alugar -->
+    <div class="flex-1 p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition">
+      <h3 class="text-2xl font-semibold mb-4">🏠 Casas para Alugar</h3>
+      <p class="text-gray-700 mb-6">Perfeitas para famílias e grupos maiores.</p>
+      <p class="text-3xl font-bold text-green-600 mb-6">A partir de R$ 500/dia</p>
+      <a href="#contato" class="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition">
+        Reservar Agora
+      </a>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- Diferenciais -->
-  <section id="diferenciais" class="py-16 px-6 md:px-20 bg-green-50">
-    <h2 class="text-3xl font-bold text-center mb-10">Por que escolher o Recanto Bela Vista?</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+  <section id="diferenciais" class="py-16 px-6 md:px-20 bg-green-50 text-center">
+    <h2 class="text-3xl font-bold mb-10">Por que escolher o Recanto Bela Vista?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition">
         <h3 class="text-xl font-semibold mb-2">🌄 Vista Privilegiada</h3>
         <p>Relaxe com uma das mais belas vistas de Guararema.</p>
@@ -103,6 +111,46 @@
       </div>
     </div>
   </section>
+
+  <h2 class=" flex justify-center text-3xl font-bold mb-6">Localização</h2>
+
+<section class="flex justify-center py-10 px-4">
+  
+  <div class="flex flex-col md:flex-row gap-8 w-full max-w-5xl">
+    
+    <!-- Primeiro mapa -->
+    <div class="flex-1 aspect-[16/9]">
+      <iframe
+        class="w-full h-full border-0 rounded-lg shadow-lg"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.1234567890!2d-46.06442176686453!3d-23.4349828945971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z0JzQtdC90YHQutC40Lkg0JrQsNC90LjQvdC40Lkg0LrQsNGB0YLRgNCw!5e0!3m2!1spt-BR!2sbr!4v0000000000000"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    
+    <!-- Segundo mapa -->
+    <div class="flex-1 aspect-[16/9]">
+      <iframe
+        class="w-full h-full border-0 rounded-lg shadow-lg"
+        src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1756928320985!5m2!1spt-BR!2sbr!6m8!1m7!1s7_HeOXEilWP9eFUYCUqG-Q!2m2!1d-23.4349828945971!2d-46.06442176686453!3f245.92742799840022!4f13.379212244851672!5f0.7820865974627469"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    
+  </div>  
+</section>
+        <p class="mb-4 text-lg flex justify-center font-semibold text-gray-700">Ponto de Referência: Sítio Piracruzes</p>
+
+
+
+
+
+
+
+
 
   <!-- Contato -->
   <section id="contato" class="py-16 px-6 md:px-20 bg-green-50 text-center">
@@ -119,11 +167,16 @@
     <p>&copy; 2025 Recanto Bela Vista. Todos os direitos reservados.</p>
   </footer>
 
-  <!-- Script do slideshow -->
+  <!-- Ícone flutuante WhatsApp -->
+  <a href="https://wa.me/5511999999999" target="_blank"
+     class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 rounded-full shadow-lg flex items-center justify-center w-10 h-10 transition-transform hover:scale-110">
+    <i class="fab fa-whatsapp text-white text-2xl"></i>
+  </a>
+
+  <!-- Script Slideshow -->
   <script>
     const slides = document.querySelectorAll('#slideshow img');
     let current = 0;
-
     function showNextSlide() {
       slides[current].classList.remove('opacity-100');
       slides[current].classList.add('opacity-0');
@@ -131,12 +184,7 @@
       slides[current].classList.remove('opacity-0');
       slides[current].classList.add('opacity-100');
     }
-
     setInterval(showNextSlide, 4000);
   </script>
-
-  
-    
-
 </body>
 </html>
