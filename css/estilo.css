@@ -1,26 +1,3 @@
-/* Força a logo a ficar independente do Tailwind */
-.logo-circulo {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  width: 125px;       /* ajuste conforme tamanho desejado */
-  height: 125px;
-  border-radius: 50%;
-  overflow: hidden;
-  background:none;  /* círculo branco por trás da logo */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  z-index: 50;
-}
-
-.logo-circulo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;   /* preenche o círculo */
-  display: block;
-  animation: none !important;   /* remove qualquer fade/anim */
-  transition: none !important;  /* remove transições do Tailwind */
-}
-
 
 /* Estilos para o slider da galeria */
 /* Corrige unidade faltando em padding */
