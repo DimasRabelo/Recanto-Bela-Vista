@@ -3,8 +3,8 @@
   position: absolute;
   top: 1rem;
   left: 1rem;
-  width: 155px;       /* ajuste conforme tamanho desejado */
-  height: 155px;
+  width: 125px;       /* ajuste conforme tamanho desejado */
+  height: 125px;
   border-radius: 50%;
   overflow: hidden;
   background:none;  /* círculo branco por trás da logo */
@@ -22,3 +22,45 @@
 }
 
 
+/* Estilos para o slider da galeria */
+/* Corrige unidade faltando em padding */
+.galeria {
+  width: 100%;
+  padding: 30px 30px; /* antes estava sem 'px' no segundo valor */
+}
+
+/* Evita cortar quando a do meio escala */
+.galeria .slick-list {
+  overflow: visible;
+}
+
+/* Centraliza cada slide corretamente */
+.galeria .slick-slide {
+  display: flex !important;
+  justify-content: center; /* centraliza horizontal */
+  align-items: center;     /* centraliza vertical */
+}
+
+/* A própria imagem */
+.galeria img {
+  border-radius: 20px;
+  width: 80% !important;   /* mantém 60% */
+  max-width: 900px;        /* opcional, limite superior */
+  display: block;
+  margin: 0 auto;          /* garante centralização */
+}
+
+/* Slide central maior */
+.galeria .slick-center {
+  transform: scale(1.3);
+  transform-origin: center center; /* ponto de escala central */
+  z-index: 2;
+}
+
+.galeria .slick-next { right: 35px; }
+.galeria .slick-prev { left: 10px; z-index: 1; }
+.galeria .slick-prev:before,
+.galeria .slick-next:before {
+  font-size: 50px;
+  color: #339254
+}
