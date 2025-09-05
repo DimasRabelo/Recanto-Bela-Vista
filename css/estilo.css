@@ -3,12 +3,19 @@
 /* Corrige unidade faltando em padding */
 .galeria {
   width: 100%;
-  padding: 30px 30px; /* antes estava sem 'px' no segundo valor */
+  padding: 50px 50px; /* antes estava sem 'px' no segundo valor */
+  
 }
+
 
 /* Evita cortar quando a do meio escala */
 .galeria .slick-list {
   overflow: visible;
+}
+
+
+.galeria .slick-list {
+  overflow: hidden; /* evita que o slide maior quebre o layout */
 }
 
 /* Centraliza cada slide corretamente */
@@ -24,15 +31,20 @@
   width: 80% !important;   /* mantém 60% */
   max-width: 900px;        /* opcional, limite superior */
   display: block;
-  margin: 0 auto;          /* garante centralização */
+  margin: 70px auto ;          /* garante centralização */
 }
+
+
 
 /* Slide central maior */
 .galeria .slick-center {
   transform: scale(1.3);
   transform-origin: center center; /* ponto de escala central */
   z-index: 2;
+  border-radius: 20px !important;
 }
+
+
 
 .galeria .slick-next { right: 35px; }
 .galeria .slick-prev { left: 10px; z-index: 1; }
@@ -41,3 +53,8 @@
   font-size: 50px;
   color: #339254
 }
+
+
+
+/* Evita rolagem horizontal globalmente */
+ body { overflow-x: hidden; }
