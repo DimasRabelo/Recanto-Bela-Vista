@@ -3,9 +3,17 @@
 /* Corrige unidade faltando em padding */
 .galeria {
   width: 100%;
-  padding: 50px 50px; /* antes estava sem 'px' no segundo valor */
+   
   
 }
+/* Responsivo: telas de celular */
+@media (max-width: 768px) {
+  .galeria {
+    padding: 0; /* remove padding em celulares */
+  }
+}
+
+
 
 
 /* Evita cortar quando a do meio escala */
