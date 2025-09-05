@@ -29,7 +29,6 @@
 .galeria img {
   border-radius: 20px;
   width: 80% !important;   /* mantém 60% */
-  max-width: 900px;        /* opcional, limite superior */
   display: block;
   margin: 70px auto ;          /* garante centralização */
 }
