@@ -61,8 +61,8 @@
   color: #339254
 }
 .galeria-title {
-  margin-top: 60px; /* distância do vídeo acima */
-  margin-bottom: -40px; /* distância abaixo do título */
+  margin-top: 33px; /* distância do vídeo acima */
+  
 }
 
 
@@ -106,6 +106,7 @@
   width: 6%;
   right: -68px;
 }
+
 
 
 .carousel-control-prev{
