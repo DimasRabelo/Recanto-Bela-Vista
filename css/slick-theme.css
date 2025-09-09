@@ -2,7 +2,7 @@
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff url('/ajax-loader.gif') center center no-repeat;
+    background: #fff url('/Recanto-Bela-Vista/ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
@@ -13,9 +13,11 @@
     font-style: normal;
     font-display: swap;
 
-    src: url('/fonts/slick.eot');
-    src: url('/fonts/slick.eot?#iefix') format('embedded-opentype'), url('/fonts/slick.woff') format('woff'), url('/fonts/slick.ttf') format('truetype') url('/fonts/slick.svg#slick') format('svg');
-    font-display: swap;
+    src: url('/Recanto-Bela-Vista/fonts/slick.eot');
+src: url('/Recanto-Bela-Vista/fonts/slick.eot?#iefix') format('embedded-opentype'),
+     url('/Recanto-Bela-Vista/fonts/slick.woff') format('woff'),
+     url('/Recanto-Bela-Vista/fonts/slick.ttf') format('truetype'),
+     url('/Recanto-Bela-Vista/fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,
