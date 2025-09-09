@@ -60,6 +60,66 @@
   font-size: 50px;
   color: #339254
 }
+.galeria-title {
+  margin-top: 60px; /* distância do vídeo acima */
+  margin-bottom: -40px; /* distância abaixo do título */
+}
+
+
+.evento {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Secular One";
+  background-color: #000000;
+  font-size: 1.5em;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+}
+
+/* videos */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 5rem;
+  height: 5rem;
+}
+/* Centraliza os vídeos e limita largura */
+.carousel-inner .carousel-item iframe {
+  max-width: 800px;   /* define a largura máxima do vídeo */
+  width: 100%;        /* adapta a largura ao container */
+  height: 450px;      /* altura fixa ou proporcional */
+  margin: 0 auto;     /* centraliza horizontalmente */
+  display: block;
+}
+
+/* Ajustes dos controles (mantidos do seu código) */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 5rem;
+  height: 5rem;
+  
+}
+
+.carousel-control-next{
+  width: 6%;
+  right: -68px;
+}
+
+
+.carousel-control-prev{
+  width: 6%;
+  left: -68px;
+}
+
+a.fixed {
+  text-decoration: none; /* remove sublinhado */
+  outline: none; /* remove linha azul ao focar */
+}
+a.fixed:focus {
+  outline: none; /* garante que não aparece ao focar */
+}
 
 
 

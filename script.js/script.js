@@ -40,3 +40,16 @@ $('.galeria').slick({
     }
   ]
 });
+
+
+ var videos = document.querySelectorAll('.video');
+
+    function stopVideos() {
+        videos.forEach(function(video) {
+            video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        });
+    }
+
+    var carousel = document.getElementById('carouselExample');
+    carousel.addEventListener('slid.bs.carousel', stopVideos);
+
