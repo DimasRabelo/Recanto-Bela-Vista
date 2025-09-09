@@ -22,7 +22,9 @@
 }
 
 
-
+.galeria .slick-list {
+  overflow: hidden; /* evita que o slide maior quebre o layout */
+}
 
 /* Centraliza cada slide corretamente */
 .galeria .slick-slide {
