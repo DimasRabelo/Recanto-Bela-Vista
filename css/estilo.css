@@ -1,128 +1,68 @@
 
 /* Estilos para o slider da galeria */
-/* Corrige unidade faltando em padding */
 .galeria {
   width: 100%;
-   
-  
+  padding: 0 50px; /* espaço lateral para a imagem central crescer */
 }
+
 /* Responsivo: telas de celular */
 @media (max-width: 768px) {
   .galeria {
-    padding: 0; /* remove padding em celulares */
+    padding: 0 10px; /* menos espaço em telas pequenas */
   }
 }
 
-
-
-
-/* Evita cortar quando a do meio escala */
+/* Garante que o carrossel não quebre o layout */
 .galeria .slick-list {
-  overflow: visible;
-}
-
-
-.galeria .slick-list {
-  overflow: hidden; /* evita que o slide maior quebre o layout */
+  overflow: visible; /* deixa a imagem central crescer */
 }
 
 /* Centraliza cada slide corretamente */
 .galeria .slick-slide {
   display: flex !important;
-  justify-content: center; /* centraliza horizontal */
-  align-items: center;     /* centraliza vertical */
+  justify-content: center;
+  align-items: center;
 }
 
 /* A própria imagem */
 .galeria img {
   border-radius: 20px;
-  width: 80% !important;   /* mantém 60% */
+  width: 80% !important;
   display: block;
-  margin: 70px auto ;          /* garante centralização */
+  margin: 70px auto;
+  transition: transform 0.3s ease; /* suaviza o zoom */
 }
-
-
 
 /* Slide central maior */
 .galeria .slick-center {
-  transform: scale(1.3);
-  transform-origin: center center; /* ponto de escala central */
+  transform: scale(1.2); /* menos agressivo que 1.3 */
+  transform-origin: center center;
   z-index: 2;
-  border-radius: 20px !important;
 }
 
-
-
+/* Botões de navegação */
 .galeria .slick-next { right: 35px; }
 .galeria .slick-prev { left: 10px; z-index: 1; }
+
 .galeria .slick-prev:before,
 .galeria .slick-next:before {
   font-size: 50px;
-  color: #339254
+  color: #339254;
 }
+
 .galeria-title {
-  margin-top: 33px; /* distância do vídeo acima */
-  
+  margin-top: 33px;
 }
 
-
-.evento {
-  text-align: center;
-  color: #ffffff;
-  font-family: "Secular One";
-  background-color: #000000;
-  font-size: 1.5em;
-  padding: 15px 15px;
-  display: flex;
-  justify-content: center;
-
-  margin: 0 auto;
+/* Evita rolagem horizontal global */
+html, body {
+  overflow-x: hidden; 
 }
 
-/* videos */
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  width: 5rem;
-  height: 5rem;
-}
-/* Centraliza os vídeos e limita largura */
-.carousel-inner .carousel-item iframe {
-  max-width: 800px;   /* define a largura máxima do vídeo */
-  width: 100%;        /* adapta a largura ao container */
-  height: 450px;      /* altura fixa ou proporcional */
-  margin: 0 auto;     /* centraliza horizontalmente */
-  display: block;
-}
-
-/* Ajustes dos controles (mantidos do seu código) */
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  width: 5rem;
-  height: 5rem;
-  
-}
-
-.carousel-control-next{
-  width: 6%;
-  right: -68px;
-}
-
-
-
-.carousel-control-prev{
-  width: 6%;
-  left: -68px;
-}
-
-a.fixed {
+ a.fixed {
   text-decoration: none; /* remove sublinhado */
   outline: none; /* remove linha azul ao focar */
 }
 a.fixed:focus {
   outline: none; /* garante que não aparece ao focar */
 }
-
-
-
-/* Evita rolagem horizontal globalmente */
- body { overflow-x: hidden; }

@@ -1,0 +1,11 @@
+  <!-- Ícones de redes sociais -->
+  <!-- <div class="flex gap-6">
+    <a href="#" target="_blank" class="cursor-pointer text-2xl">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/recantobelavistaguararema/" target="_blank" class="cursor-pointer text-2xl">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" target="_blank" class="cursor-pointer text-2xl">
+      <i class="fab fa-youtube"></i>
+  </div> -->
