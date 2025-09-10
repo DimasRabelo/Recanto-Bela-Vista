@@ -106,6 +106,5 @@ a.fixed:focus {
 }
 
 
-
 /* Evita rolagem horizontal globalmente */
  body { overflow-x: hidden; }
